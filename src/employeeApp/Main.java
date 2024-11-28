@@ -1,31 +1,20 @@
 package employeeApp;
 
-/**
- * Uygulamanın amacı Java'da nesne tabanlı programlamanın temellerinin oluşturulmasıdır.
- *
- */
 public class Main
 {
 
-    /**
-     * Uygulamadaki tüm işlemler bu metotda yapılmalı
-     */
     private static void workWithData ()
     {
+        Employee employee = new Employee(5,"Eray","erayinci99@gmail.com","asd123", new String[5]);
+        employee.addHealthPlan(2,"a");
+        employee.addHealthPlan(2,"b");
+        employee.addHealthPlan(6,"c");
+        System.out.println(employee);
+
 
     }
 
-    /**
-     * Bu projenin ana(main) metodu. Java uygulamalarında main metot küçük bir metot olur.
-     * Bir Java programınd ilgili işlemlerin çoğunluğu başka metodlarda yapılır.
-     * Daha sonra ana metod diğer metodları çağırır. Böylece ana metodun içi kalabalık bir hale gelmemiş olur.
-
-     *
-     * @param args bu uygulamada kullanılmamaktadır. Command Line üzerinden argüman alan
-     *             bir uygulamamız olsaydı kullanılacaktı.
-     */
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         workWithData();
     }
 }
