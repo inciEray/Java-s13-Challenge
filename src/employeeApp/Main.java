@@ -10,6 +10,9 @@ public class Main
         employee.addHealthPlan(2,"b");
         employee.addHealthPlan(6,"c");
         System.out.println(employee);
+        System.out.println("*************************************");
+        Company company = new Company(3,"Eray",12345, new String[10]);
+        
 
 
     }
